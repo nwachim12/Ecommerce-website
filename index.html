@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cool Shop Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Kick Trend</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <div class="super_container">
+        <!-- Header -->
+        <header class="header trans_300">
+            <div class="main_nav_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-right">
+                            <div class="logo_container">
+                                <a href="#">Kick <span>Trend</span></a>
+                            </div>
+                            <nav class="navbar">
+                                <ul class="navbar_menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#new_arrivals">Shop</a></li>
+                                    <li><a href="#dropOftheWeek">Promotion</a></li>
+                                    <li><a href="#best_sellers">Pages</a></li>
+                                    <li><a href="#blogs">Blog</a></li>
+                                    <li><a href="#footer">Contacts</a></li>
+                                </ul>
+								<ul class="navbar_user">
+									<li id="searchIcon"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+									<li class="checkout">
+										<a href="#">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											<span id="checkout_items" class="checkout_items">2</span>
+										</a>
+									</li>
+								</ul>
+								<div class="search-container" id="searchContainer">
+									<input type="text" id="searchInput" placeholder="Type Here">
+									<button id="searchButton">Search</button> 
+								</div>								
+								<div class="hamburger_container">
+									<i class="fa fa-bars" aria-hidden="true"></i>
+								</div>
+							</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+		<div class="fs_menu_overlay"></div>
+			<div class="hamburger_menu">
+				<div class="hamburger_close"><i class = "fa fa-times" aria-hidden="true"></i></div>
+					<div class="hamburger_menu_content text-right">
+						<ul class = "menu_top_nav">
+							<li class = "menu_item"><a href = "#">Home</a></li>
+							<li class = "menu_item"><a href = "#new_arrivals">Shop</a></li>
+							<li class = "menu_item"><a href = "#dropOftheWeek">Promotion</a></li>
+							<li class = "menu_item"><a href = "#best_sellers">Pages</a></li>
+							<li class = "menu_item"><a href = "#blogs">Blog</a></li>
+							<li class = "menu_item"><a href = "#footer">Contacts</a></li>
+						</ul>
+					</div>
+			</div>
+
+        <!-- Slider -->
+        <div class="main_slider" style="background-image: url(images/dunk.jpg);">
+            <div class="container fill_height">
+                <div class="row align-items-center fill_height">
+                    <div class="col">
+                        <div class="main_slider_content">
+                            <h6>Summer / Fall Collection 2024</h6>
+                            <h1>Get up to 30% Off New Drops</h1>
+                            <div class="red_button shop_now_button"><a href="#">Shop Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Sections -->
+        <!-- Banner -->
+		<div class = "banner">
+			<div class = "container">
+				<div class = "row">
+					<div class = "col-md-4">
+						<div class = "banner_item align-items-center" style="background-image: url(images/cem.jpg);">
+							<div class = "banner_category">
+								<a href = '#'>Womens</a>
+							</div>
+						</div>
+					</div>
+
+					<div class = "col-md-4">
+						<div class = "banner_item align-items-center" style="background-image: url(images/jj.jpg);">
+							<div class = "banner_category">
+								<a href = '#'>Mens</a>
+							</div>
+						</div>
+					</div>
+
+					<div class = "col-md-4">
+						<div class = "banner_item align-items-center" style="background-image: url(images/blackforces.jpg);">
+							<div class = "banner_category">
+								<a href = '#'>Childern</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+<!-- New Arrivals -->
+<div id="new_arrivals" class="new_arrivals">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title new_arrivals_title">
+                    <h2>New Arrivals</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Sorting Buttons -->
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <div class="new_arrivals_sorting">
+                    <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">all</li>
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">womens</li>
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">mens</li>
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".children">children</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Products Grid -->
+        <div class="row">
+            <div class="col">
+                <div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+                    <!-- Product 1 -->
+                    <div class="product-item men">
+                        <div class="product discount product_filter">
+                            <div class="product_image">
+                                <img src="images/bluenike.jpg" alt="Nike Air Force 1 Low
+								Off-White MCA University Blue">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="">Nike Air Force 1 Low
+									Off-White MCA University Blue</a></h6>
+                                <div class="product_price">$1520.00<span>$1590.00</span></div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-item women">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/womensjordan.jpg" alt="Air Jordan 4 Retro 'Metallic Gold'">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">Air Jordan 4 Retro 'Metallic Gold'</a></h6>
+                                <div class="product_price">$320.00<span>$390</span></div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-item men">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/blackcatss.jpg" alt="Jordan 4 Retro 'Black Cats'">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">Jordan 4 Retro 'Black Cats</a></h6>
+                                <div class="product_price">$950.00</div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-item men">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/jordan3.webp" alt="Air jordan 3 retro white cement">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">Air jordan 3 retro white cement</a></h6>
+                                <div class="product_price">$200.00<span>$270.00</span></div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-item women men">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/rick.jpg" alt="2024
+								Rick Owens Porterville DRKSHDW Low 'Black Milk'">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">2024
+									Rick Owens Porterville DRKSHDW Low 'Black Milk'</a></h6>
+                                <div class="product_price">$520.00</div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-item men">
+                        <div class="product discount product_filter">
+                            <div class="product_image">
+                                <img src="images/dior2.jpg" alt="B30 Sneaker
+								Black Mesh and Technical Fabric">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">B30 Sneaker
+									Black Mesh and Technical Fabric</a></h6>
+                                <div class="product_price">$1500.00<span>$1200.00</span></div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="product-item women">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/acics.webp" alt="ASICS Gel-1130
+								White Midnight (Women's)">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">ASICS Gel-1130
+									White Midnight (Women's)</a></h6>
+                                <div class="product_price">$150.00</div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="product-item children">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/add.jpg" alt="Adidas Samba OG
+								Black White Gum">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">Adidas Samba OG
+									Black White Gum</a></h6>
+                                <div class="product_price">$120.00</div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="product-item men">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/forces.jpg" alt="White Air Forces 07">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">White Air Forces 07</a></h6>
+                                <div class="product_price">$120.00</div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 10 -->
+                    <div class="product-item men">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/yeezy.jpg" alt="Yeezy Slides 2020">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">Yeezy Slides 2020</a></h6>
+                                <div class="product_price">$150.00</div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+					<!--Product 11-->
+					<div class=" product-item men">
+                        <div class="product discount product_filter">
+                            <div class="product_image">
+                                <img src="images/blue.jpg" alt="2021
+								Dunk Low 'University Blue'">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">2021 Dunk Low 'University Blue'
+									</a></h6>
+                                <div class="product_price">250.00<span>$220.00</span></div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+					<!--Product 12-->
+					<div class="product-item men">
+                        <div class="product product_filter">
+                            <div class="product_image">
+                                <img src="images/red.jpg" alt="2022
+								Dunk Low 'Gym Red'">
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_name"><a href="#">2022
+									Dunk Low 'Gym Red'</a></h6>
+                                <div class="product_price">$160.00</div>
+                            </div>
+                            <div class="red_button add_to_cart_button"><a href="#">Add to Cart</a></div>
+                            <div class="favorite">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Drop of the Week -->
+	<div id="dropOftheWeek" class="deal_ofthe_week">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="deal_ofthe_week_img">
+						<img src="images/blackforces.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6 text-right deal_ofthe_week_col">
+					<div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+						<div class="section_title">
+							<h2>Drop Of The Week</h2>
+						</div>
+						<ul class="timer">
+							<li class="d-inline-flex flex-column justify-content-center align-items-center">
+								<div id="day" class="timer_num">0</div>
+								<div class="timer_unit">Day</div>
+							</li>
+							<li class="d-inline-flex flex-column justify-content-center align-items-center">
+								<div id="hour" class="timer_num">0</div>
+								<div class="timer_unit">Hours</div>
+							</li>
+							<li class="d-inline-flex flex-column justify-content-center align-items-center">
+								<div id="minute" class="timer_num">0</div>
+								<div class="timer_unit">Mins</div>
+							</li>
+							<li class="d-inline-flex flex-column justify-content-center align-items-center">
+								<div id="second" class="timer_num">0</div>
+								<div class="timer_unit">Secs</div>
+							</li>
+						</ul>
+						<div class="red_button deal_ofthe_week_button"><a href="#">Shop Now</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Best Sellers-->
+	<div id= "best_sellers" class = "best_sellers">
+		<div class="container">
+			<div class="row">
+				<div class = "col text-center">
+					<div class = "section_title new_arrivals_title">
+						<h2>Best Sellers</h2>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class="col">
+					<div class="product_slider_container">
+						<div class = "owl-carousel owl-theme product_slider">
+						
+							<!--Slider 1-->
+							<div class = "owl-item product_slider_item">
+								<div class="product-item men">
+									<div class="product discount product_filter">
+										<div class="product_image">
+											<img src="images/bluenike.jpg" alt="Nike Air Force 1 Low
+											Off-White MCA University Blue">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">Nike Air Force 1 Low
+												Off-White MCA University Blue</a></h6>
+											<div class="product_price">$1520.00<span>$1590.00</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+								<!-- Slider 2 -->
+								<div class = "owl-item product_slider_item">
+								<div class="product-item women">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/womensjordan.jpg" alt="Air Jordan 4 Retro 'Metallic Gold'">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">Air Jordan 4 Retro 'Metallic Gold'</a></h6>
+											<div class="product_price">$320.00<span>$390</span></div>
+										</div>
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+								</div> 
+								<!-- Slider 3 -->
+								<div class = "owl-item product_slider_item">
+								<div class="product-item men">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/blackcatss.jpg" alt="Jordan 4 Retro 'Black Cats'">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">Jordan 4 Retro 'Black Cats</a></h6>
+											<div class="product_price">$950.00</div>
+										</div>
+										
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+								</div>
+								<!-- Slider 4 -->
+								<div class = "owl-item product_slider_item">
+								<div class="product-item men">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/jordan3.webp" alt="Air jordan 3 retro white cement">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">Air jordan 3 retro white cement</a></h6>
+											<div class="product_price">$200.00<span>$270.00</span></div>
+										</div>
+										
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+							</div>
+								<!-- Slider 5 -->
+								<div class = "owl-item product_slider_item">
+								<div class="product-item women men">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/rick.jpg" alt="2024
+											Rick Owens Porterville DRKSHDW Low 'Black Milk'">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">2024
+												Rick Owens Porterville DRKSHDW Low 'Black Milk'</a></h6>
+											<div class="product_price">$520.00</div>
+										</div>
+										
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+								</div>
+								<!-- Slider 6 -->
+								<div class = "owl-item product_slider_item">
+								<div class="product-item men">
+									<div class="product discount product_filter">
+										<div class="product_image">
+											<img src="images/dior2.jpg" alt="B30 Sneaker
+											Black Mesh and Technical Fabric">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">B30 Sneaker
+												Black Mesh and Technical Fabric</a></h6>
+											<div class="product_price">$1500.00<span>$1200.00</span></div>
+										</div>
+										
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+								</div>
+								<!-- Slider 7 -->
+								<div class = "owl-item product_slider_item">
+								<div class="product-item women">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/acics.webp" alt="ASICS Gel-1130
+											White Midnight (Women's)">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">ASICS Gel-1130
+												White Midnight (Women's)</a></h6>
+											<div class="product_price">$150.00</div>
+										</div>
+										
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+								</div>
+								<!-- Slider 8 -->
+								<div class = "owl-item product_slider_item">
+								<div class="product-item children">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/add.jpg" alt="Adidas Samba OG
+											Black White Gum">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">Adidas Samba OG
+												Black White Gum</a></h6>
+											<div class="product_price">$120.00</div>
+										</div>
+										
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+								</div>
+								<!-- Slider 9 -->
+							<div class = "owl-item product_slider_item">
+								<div class="product-item men">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/forces.jpg" alt="White Air Forces 07">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">White Air Forces 07</a></h6>
+											<div class="product_price">$120.00</div>
+										</div>
+										
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+							</div>
+								<!-- Slider 10 -->
+							<div class = "owl-item product_slider_item">
+								<div class="product-item men">
+									<div class="product product_filter">
+										<div class="product_image">
+											<img src="images/yeezy.jpg" alt="Yeezy Slides 2020">
+										</div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="#">Yeezy Slides 2020</a></h6>
+											<div class="product_price">$150.00</div>
+										</div>
+										<div class="favorite">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Slider Navigation-->
+						<div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<i class = "fa fa-chevron-left" aria-hidden = "true"></i>
+						</div>
+
+						<div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<i class = "fa fa-chevron-left" aria-hidden = "true"></i>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Benefit -->
+	<div class = "benefit">
+		<div class="container">
+			<div class="row benefit_row">
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class = "benefit_icon">
+							<i class = "fa fa-truck" aria-hidden = "true"></i>
+						</div>
+						<div class = "benefit_content">
+							<h6>Free Shipping</h6>
+							<p>Suffered Alteration is Some Form</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class = "benefit_icon">
+							<i class = "fa fa-undo" aria-hidden = "true"></i>
+						</div>
+						<div class = "benefit_content">
+							<h6>45 Days Return</h6>
+							<p>Making it Look like Readable</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class = "benefit_icon">
+							<i class = "fa fa-money" aria-hidden = "true"></i>
+						</div>
+						<div class = "benefit_content">
+							<h6>Cash on Delivery</h6>
+							<p>The Internet tend to Repeat</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 benefit_col">
+					<div class="benefit_item d-flex flex-row align-items-center">
+						<div class = "benefit_icon">
+							<i class = "fa fa-truck" aria-hidden = "true"></i>
+						</div>
+						<div class = "benefit_content">
+							<h6>Opening all week</h6>
+							<p>8AM- 09PM</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Blog-->
+	<div id = "blogs" class="blogs">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title">
+						<h2>Latests News</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row blogs_container">
+				<div class="col-lg-4 blog_item_col">
+					<div class="blog_item">
+						<div class="blog_background" style = "background-image: url(images/pairt.jpg)"></div>
+						<div class = "blog_content d-flex flex-column align-items-center justify-items-center text-center">
+							<h4 class = "blog_title">Jordan 4 White Thunder Drop Soon! Don't Miss Out!</h4>
+							<span class = "blog_meta">By Admin | August 15, 2024</span>
+							<a class = "blog_more" href = "https://www.goat.com/sneakers/air-jordan-4-retro-white-thunder-fq8138-001?sizing=9.0&utm_source=google_ads&utm_medium=cpc&utm_campaign=19999093918&utm_content=&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7Nxrhxp_Ja6z_ldxvAhlHxO7PDLvYV3H1qBAVn5mwAFHUhQLZeTxJRMsaAl5EEALw_wcB">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 blog_item_col">
+					<div class="blog_item">
+						<div class="blog_background" style = "background-image: url(images/lebron.jpg)"></div>
+						<div class = "blog_content d-flex flex-column align-items-center justify-items-center text-center">
+							<h4 class = "blog_title">LeBron James' New Nike Sneakers Drop in Familiar Colorways</h4>
+							<span class = "blog_meta">By Admin | August 14, 2024</span>
+							<a class = "blog_more" href = "https://www.si.com/fannation/sneakers/news/lebron-james-latest-nike-sneaker-is-out-now">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 blog_item_col">
+					<div class="blog_item">
+						<div class="blog_background" style = "background-image: url(images/off.jpg)"></div>
+						<div class = "blog_content d-flex flex-column align-items-center justify-items-center text-center">
+							<h4 class = "blog_title">Coming Soon Off-White x Wmns Air Jordan 4 Retro SP 'Sail'</h4>
+							<span class = "blog_meta">By Admin | August 02, 2024</span>
+							<a class = "blog_more" href = "https://www.goat.com/sneakers/off-white-x-wmns-air-jordan-4-sp-sail-cv9388-100?sizing=9.5&utm_source=google_ads&utm_medium=cpc&utm_campaign=20267541987&utm_content=&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxqZrj1Kn9whymrONrFq7Bmh3VexfbID-lpk4xZnWGftb7oXuj2HKpIaAu-xEALw_wcB">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="newsletter_text d-flex flex-column justify-content-center 
+					align-items-lg-start align-items-md-center text-center ">
+						<h4>Memebership</h4>
+						<p>Subsrcribe to Weekly News and Drops and get 20% off first purchase</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action = "post">
+						<div class = "newsletter_form d-flex flex-md-row flex-column flex-xs-column 
+						align-items-center justify-content-lg-end justify-content-center">
+						<input id = "newsletter_email" type="email" placeholder="Your Email" required = "required"
+						data-error = "valid email is required.">
+						<button id = "newsletter_submit" type="submit" class = "newsletter_submit_btn trans_300"
+						value = "submit">Subsrcribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Footer -->
+	<footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer_nav_container d-flex flex-sm-row flex-column 
+                    align-items-center justify-content-lg-start justify-content-center text-center">
+                        <ul class="footer_nav">
+                            <li><a href="#blogs" title="Go to Blog section" aria-label="Navigate to Blog section">Blog</a></li>
+                        <li><a href="mailto:nwachim12@gmail.com?subject=FAQs" title="Email us for FAQs" aria-label="Email us for FAQs">FAQs</a></li>
+                        <li><a href="#footer" title="Go to Contacts section" aria-label="Navigate to Contacts section">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer_social d-flex flex-row align-items-center 
+                    justify-content-lg-end justify-content-center">
+                        <ul>
+                            <li><a href="https://www.youtube.com/@MikeNwachi"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/nwachim12"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/mike-nwachi-4493aa284/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_nav-container">
+                    <div class="cr">
+                        @2024 All Rights Reserved. Michael Nwachi<i class="fa fa-heart-o" aria-hidden="true"></i><a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+    <!-- JavaScript Files -->
+    <!-- jQuery JS File -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <!-- Isotope JS File -->
+    <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+    <!-- Owl Carousel JS File -->
+    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <!-- Custom JS File -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
